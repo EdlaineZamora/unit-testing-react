@@ -16,21 +16,33 @@ const Login = () => {
     }
     
     return (
-        <div>
-            <form className='login-form' onSubmit={handleSubmit}>
-                <div className='login-form-item'>
-                    <label className='login-label' htmlFor='userName'>Usuário</label>
-                    <input className='login-input' id='userName'></input>
-                </div>
-                <div className='login-form-item'>
-                    <label className='login-label' htmlFor='password'>Senha</label>
-                    <input type='password' className='login-input' id='password'></input>
-                </div>
-                <button className='login-button'>Logar</button>
-            </form>
-            <label>{logged ? 'Logado com sucesso' : 'Usuário ou senha incorreto'}</label>
-        </div>
-    )
+      <div>
+        <form className="login-form" onSubmit={handleSubmit}>
+          <div className="login-form-item">
+            <label className="login-label" htmlFor="userName">
+              Usuário
+            </label>
+            <input className="login-input" id="userName"></input>
+          </div>
+          <div className="login-form-item">
+            <label className="login-label" htmlFor="password">
+              Senha
+            </label>
+            <input
+              type="password"
+              className="login-input"
+              id="password"
+            ></input>
+          </div>
+          <button className="login-button">
+            Logar
+          </button>
+        </form>
+        <label>
+          {logged ? "Logado com sucesso" : "Usuário ou senha incorreto"}
+        </label>
+      </div>
+    );
 }
 
 export default Login;
