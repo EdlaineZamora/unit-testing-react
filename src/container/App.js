@@ -1,10 +1,12 @@
 import React from 'react';
+import Login from '../pages/Login/Login';
+import './App.css';
 
 const App = () => {
   return (
-    <>
-      <h1>Unit Testing React</h1>
-    </>
+    <div className='container'>
+      <Login></Login>
+    </div>
   );
 }
 
